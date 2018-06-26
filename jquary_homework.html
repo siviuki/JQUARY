@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/home/ukistu12/Documents/uki3/JQUARY/jquery-3.3.1.js"></script>
+  <script src="/home/ukistu12/Documents/uki3/JQUARY/jquery-3.3.1.min.js"></script>
+  <script src="/home/ukistu12/Documents/uki3/JQUARY/jquery-3.3.1.min.map"></script>
+  <style>
+    img {
+      width: 15%;
+      display: none;
+    }
+  </style>
+
+    <script>
+      $(document).ready (function() {
+        $("#show").click(function() {
+          $("img").show();
+        });
+
+      $("#hide").click(function () {
+        $("img").hide();
+      });
+
+      $("#toggle").click (function () {
+        $("img").toggle();
+      });
+
+      $("#slideup").dblclick (function() {
+        $("img").slideUp("slow", function () {
+
+        });
+      });
+
+      $("#slidedown").dblclick (function() {
+        $("img").slideDown("slow");
+      });
+
+      $("#slidetoggle").dblclick (function () {
+        $("img").slideToggle("slow");
+      });
+
+      $("#fadein").keydown (function () {
+        $("img").fadeIn(3000);
+      });
+
+      $("#fadeout").keydown (function () {
+        $("img").fadeOut(3000);
+      });
+
+      $("#fadetoggle").keydown (function () {
+        $("img").fadeToggle(3000);
+      });
+      });
+    </script>
+</head>
+<body>
+  <button id="show">Show</button><br>
+  <button id="hide">Hide</button><br>
+  <button id="toggle">Toggle</button><br>
+  <img class="crop" src="/home/ukistu12/Documents/uki3/JQUARY/3.jpg">
+  <button id="slideup">SlideUp</button>
+  <button id="slidedown">SlideDown</button>
+  <button id="slidetoggle">SlideToggle</button><br>
+  <button id="fadein">FadeIn</button>
+  <button id="fadeout">FadeOut</button>
+  <button id="fadetoggle">FadeToggle</button>
+</body>
+
+
+</html>
